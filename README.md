@@ -36,3 +36,15 @@ Unique values using Set
 ```
 let uniqueArray = [...new Set([5,5,2,4,2])];
 ```
+
+Closures
+```
+function makeAdjectifier(adjective) {
+  return function (noun) {
+    return adjective + ' ' + noun;
+  }
+}
+
+const adjective = makeAdjectifier('hello')
+adjective('JS')
+```
