@@ -34,7 +34,7 @@ items.reduce((acc, item) => acc + item.price, 0);
 Unique values using Set
 
 ```
-let uniqueArray = [...new Set([5,5,2,4,2])];
+const uniqueArray = [...new Set([5,5,2,4,2])];
 ```
 
 Closures
