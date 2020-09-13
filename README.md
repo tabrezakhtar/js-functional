@@ -68,3 +68,14 @@ const a2 = a.push(3);        // [1, 2, 3]
 a.size;                      // 2
 a2.get(2);                   // 3
 ```
+
+ImmutableJS - create map
+
+```
+const Imjs = require('immutable);
+
+const o = Imjs.Map({"a": 1, "b": 2}); // {"a": 1, "b": 2}
+const o2 = 0.set("a", 3);             // {"a": 3, "b": 2}
+o.get("a");                           // 1
+o2.get("a");                          // 3
+```
