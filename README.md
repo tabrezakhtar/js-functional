@@ -57,3 +57,14 @@ const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x)
 
 const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
 ```
+
+ImmutableJS - create list
+
+```
+const Imjs = require('immutable);
+
+const a = Imjs.List.of(1,2); // [1, 2]
+const a2 = a.push(3);        // [1, 2, 3]
+a.size;                      // 2
+a2.get(2);                   // 3
+```
