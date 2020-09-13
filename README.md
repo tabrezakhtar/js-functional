@@ -38,6 +38,7 @@ let uniqueArray = [...new Set([5,5,2,4,2])];
 ```
 
 Closures
+
 ```
 function makeAdjectifier(adjective) {
   return function (noun) {
@@ -47,4 +48,12 @@ function makeAdjectifier(adjective) {
 
 const adjective = makeAdjectifier('hello')
 adjective('JS')
+```
+
+Pipe and Compose
+
+```
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x)
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
 ```
