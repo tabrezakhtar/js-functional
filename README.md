@@ -75,7 +75,7 @@ ImmutableJS - create map
 const Imjs = require('immutable);
 
 const o = Imjs.Map({"a": 1, "b": 2}); // {"a": 1, "b": 2}
-const o2 = 0.set("a", 3);             // {"a": 3, "b": 2}
+const o2 = o.set("a", 3);             // {"a": 3, "b": 2}
 o.get("a");                           // 1
 o2.get("a");                          // 3
 ```
